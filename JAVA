@@ -1,0 +1,13 @@
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("PLZ enter your name: ");
+        String name = scanner.nextLine();
+        System.out.println("Hello"+name);
+        System.out.println("PLZ enter your Age: ");
+        int age = scanner.nextInt();
+        int year = LocalDate.now().minusYears(age).getYear();
+        System.out.println("Your are" + age+ "years old"  +"You were born in "+year);
+        if (age >30){
+            System.out.println("You can get free ticket");
+        } else {
+            System.out.println("WE ARE SO SORRY FOR YOU");
+        }
