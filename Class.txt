@@ -1,0 +1,62 @@
+***********in the main page***************
+
+
+package com.company;
+
+public class Main {
+    public static void main(String[] args) {
+        Iphone iphone7 = new Iphone();
+        Iphone SamsungS8 = new Iphone();
+
+        iphone7.setModel("Phone Model is: Iphone 7 Plus ");
+         iphone7.setPrice(155.99);
+          iphone7.setWaterResistant(true);
+           System.out.println(iphone7.getModel());
+            System.out.println(iphone7.getPrice());
+             System.out.println(iphone7.isWaterResistant());
+
+                System.out.println();
+                SamsungS8.setModel("Phone Model is: Samsung S8");
+                SamsungS8.setPrice(250.99);
+                SamsungS8.setWaterResistant(true);
+                System.out.println(SamsungS8.getModel());
+                System.out.println(SamsungS8.getPrice());
+                System.out.println(SamsungS8.isWaterResistant());
+
+    }
+}
+
+********************* class Iphone****************
+package com.company;
+
+public class Iphone {
+    private String model;
+    private double price;
+    private boolean isWaterResistant;
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public boolean isWaterResistant() {
+        return isWaterResistant;
+    }
+
+    public void setWaterResistant(boolean waterResistant) {
+        this.isWaterResistant = waterResistant;
+    }
+
+}
+
