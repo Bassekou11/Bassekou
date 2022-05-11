@@ -1,0 +1,195 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // write your code here
+        String [] names= {"Issa","Moussa","Moussa","Moussa","Baba"};
+        int student =studenNames(names,"Moussa");
+        System.out.println(student);
+    }
+    public static int studenNames(String [] names, String searchNames)
+    {
+        int count =0;
+        for (String name:names){
+            if (name == searchNames)
+            {
+                count ++;
+            }
+        }
+        return count++;
+    }
+}
+*************
+package com.company;
+
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // write your code here
+        char[] letters = {'A', 'A', 'B', 'X', 'C'};
+        int count = count0ccurences(letters, 'A');
+        System.out.println(count);
+    }
+
+    public static int count0ccurences(char[] letters, char searchLetters) {
+        int count = 0;
+        for (char letter : letters) {
+            if (letter == searchLetters) {
+                count++;
+            }
+        }
+        return count++;
+    }
+}
+
+************************************************
+
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args)
+    {
+	// write your code here
+        Lens LensOne = new Lens(
+                "Sony",
+                "35mm",
+                true);
+
+      /*  Lens LensTwo = new Lens(
+                "Iphone",
+                "15-25mm",
+                true);
+
+        Lens LensThird = new Lens(
+                "Canon",
+                "35mm",
+                true);*/
+
+        System.out.printf("Brand one ->");
+        System.out.printf(LensOne.brand);
+        System.out.printf(LensOne.focalLenght);
+        System.out.printf(String.valueOf(LensOne.isPrime));
+        System.out.printf("");
+
+    /*    System.out.printf("Brand two -> ");
+        System.out.printf(LensTwo.brand);
+        System.out.printf(LensTwo.focalLenght);
+        System.out.printf(String.valueOf(LensTwo.isPrime));
+        System.out.printf("");
+
+        System.out.printf("Brand third ->");
+        System.out.printf(LensThird.brand);
+        System.out.printf(LensThird.focalLenght);
+        System.out.printf(String.valueOf(LensThird.isPrime));
+        System.out.printf("");*/
+
+    }
+
+    public static class Lens
+    {
+        String brand;
+        String focalLenght;
+        boolean isPrime;
+    Lens(String brand, String focalLenght, boolean isPrime)
+    {
+        this.brand=brand;
+        this.focalLenght=focalLenght;
+        this.isPrime = isPrime;
+
+    }
+
+    }
+}
+
+*********      Primitive and reference type diff   ********
+
+
+
+	//write your code here
+        int x =0;
+        int y = incrementValue(x);
+        System.out.printf(String.valueOf(x+"\n"));
+        System.out.printf(String.valueOf(y+"\n")); 
+
+    }
+    static int incrementValue(int value)
+    {
+        return value+1;
+    }
+
+***************             ****************************
+package com.company;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Mali mali = new Mali("BAMAKO","8");
+        System.out.println(mali.toString());
+
+    }
+    static class Mali{
+        String Capital="Bamako";
+        int  region= 8;
+
+        Mali(String Capital, int region){
+            this.Capital = Capital;
+            this.region = region;
+
+        }
+
+        public Mali(String bamako, String s) {
+        }
+
+        public int getRegion(){
+            return region;
+        }
+
+        public String getCapital() {
+            return Capital;
+        }
+        @Override
+        public String toString()
+        {
+            return("Hi this my country Capital is "+ this.getCapital()+
+                    ".\nand we do have  " +
+                    this.getRegion());
+        }
+    }
+
+
+}
+**************** ODD EVEN ***********************
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Enter ur num: ");
+        int num = reader.nextInt();
+        if (num % 2 ==0){
+            System.out.println( num+ " Is even");
+        }else {
+            System.out.println( num+ " Is odd");
+        }
+
+***************  Enter two integers and give output             ************************
+
+        
+
+****************** if number is Negative or Posetive             ******************************
+
+      Scanner ne = new Scanner(System.in);
+        System.out.println("enter a number to check: ");
+        int number = ne.nextInt();
+        if (number <0){
+            System.out.println(number+ " Is ne gative");
+        } else if (number >0) {
+            System.out.println(number+ " Is positive");
+
+        }else{
+            System.out.println(number+ "Number is 0 ");
+        }
+
+******************               *******************
