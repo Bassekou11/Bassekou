@@ -13,3 +13,17 @@ def finGrade(mark):
     return garde
 
 print("your Grade is : ",finGrade(mark))
+
+   MAKE DISCUNT FOR CUSTOMERS
+   
+   def calculate_discount(price, percentage):
+    if price >= 50:
+        discount = price * (percentage / 100)
+        discounted_price = price - discount
+        return discounted_price
+
+    else:
+        return price
+
+print("DISCOUNTED PRICE:", calculate_discount(price, percentage))
+
