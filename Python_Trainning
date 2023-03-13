@@ -14,6 +14,7 @@ def finGrade(mark):
 
 print("your Grade is : ",finGrade(mark))
 
+********************************************************************************************
    MAKE DISCUNT FOR CUSTOMERS
    
    def calculate_discount(price, percentage):
@@ -27,3 +28,27 @@ print("your Grade is : ",finGrade(mark))
 
 print("DISCOUNTED PRICE:", calculate_discount(price, percentage))
 
+**********************************************************************************************
+Name = input("Enter your name(USER1): ")
+Name2 = input("Enter your name(USER2): ")
+
+while (True):
+    user1 = input("Do you want to choose rock, paper, or scissors: ")  # Ask for the user's choice.
+    user2 = input("Do you want to choose rock, paper, or scissors: ")  # Ask for the user's choice.
+    user1_pick = (
+        2 if ("paper" == user1) else (1 if ("rock" == user1) else (0 if ("scissor" == user1) else 99)))
+    user2_pick = (
+        2 if ("paper" == user2) else (1 if ("rock" == user2) else (0 if ("scissor" == user2) else 99)))
+    if (user1_pick == 99):
+        exit()
+    if (user2_pick == 99):
+        continue
+    if (user2_pick == user1_pick):
+        print("COUNTINUE....................")
+    elif ((user2_pick == 2 and user1_pick == 0) or (user2_pick < user1_pick)):
+        print("Player 1 win")
+        break
+    else:
+        print("Player 2 win")
+        break
+        
