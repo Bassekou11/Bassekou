@@ -1,0 +1,15 @@
+      CALCULATE STUDENT GRADE
+      
+mark= eval(input("Enter your Grade: "))
+def finGrade(mark):
+    if(mark >=0 and mark <30):
+        garde= "F"
+    elif(mark >=30 and mark <40):
+        garde ="D"
+    elif (mark >= 40 and mark < 80):
+        garde = "B"
+    elif (mark >= 80 and mark <= 100):
+        garde = "A"
+    return garde
+
+print("your Grade is : ",finGrade(mark))
