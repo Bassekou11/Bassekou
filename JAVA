@@ -11,3 +11,34 @@
         } else {
             System.out.println("WE ARE SO SORRY FOR YOU");
         }
+
+*******************************************************************************
+
+Scanner scanner = new Scanner(System.in);
+//        System.out.printf("Number: ");
+//        int fizz = scanner.nextInt();
+//        if (fizz %5==0 ){
+//            System.out.printf("FIZZ");
+//        }
+//        int bizz = scanner.nextInt();
+//        if (bizz %3==0){
+//            System.out.printf("Buzz");
+//        }
+//        int fizbuzz = scanner.nextInt();
+//        if (fizbuzz %3 ==0 && fizbuzz %5 ==0){
+//            System.out.printf("FIZZBUZZ");
+//        }
+
+        Scanner scanner =new Scanner(System.in);
+        String input = " ";
+        while (!input.equals("quit")) {
+            System.out.print("input: ");
+            input = scanner.next().toLowerCase();
+            System.out.println(input);
+            
+            
+ ****************************************************************************
+ 
+ 
+ 
+ 
